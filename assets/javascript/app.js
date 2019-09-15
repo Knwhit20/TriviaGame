@@ -109,7 +109,9 @@ function finalScore() {
 
     }
 
-
+//turn off default selction
+//update scoreboard
+//style
 
 
 
