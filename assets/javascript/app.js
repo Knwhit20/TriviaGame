@@ -1,8 +1,4 @@
-var userChoice = [];
-var correctAnswers = 0;
-var incorrectAnswers = 0;
-var missedAnswers = 0;
-var timeDisplay;
+
 
 var questions = [
     {
@@ -67,9 +63,8 @@ function runQuiz() {
     // questions
     for (var i = 0; i < questions.length; i++) {
         $("#main-container").append('<h2>' + questions[i].query + '</h2>');
-        $("#main-container").append('<div>' + questions[i].choices + '</div>');
         for (var k = 0; k < questions[i].choices.length; k++) {
-            $("#main-container").append('<div class="form-check">< input class= "form-check-input" type = "radio" name = "exampleRadios" id = "exampleRadios1" value = "option1" checked ><label class="form-check-label" for="exampleRadios1">Default radio</label></div >')
+            $("#main-container").append('<div class="form-check"><input class="form-check-input" type="radio" name="'+ i +'" id="radio-'+ i + '-' + k +'" value="option1" checked><label class="form-check-label" for="exampleRadios1">' + questions[i].choices[k] + '</label></div>')
         }
 
     }
@@ -90,8 +85,40 @@ function runQuiz() {
 }
 
 function finalScore() {
+    var correct = 0
+    var incorrect = 0
+    var unanswered = 0
+    for (var i = 0; i < questions.length; i++) {
+        console.log('checked:', $("#radio-" + i + "-" + questions[i].answer).is(':checked'))
+        if ($("#radio-" + i + "-" + questions[i].answer).is(':checked')){
+            correct++
+            
+        }else{
+            var found = false;
+            for (var k = 0; k < questions[i].choices.length; k++){
+                if ($("#radio-" + i + "-" + k ).is(':checked')) {
+                    incorrect++
+                    found = true;
+                }
+
+            }
+            if (found === false) {
+                unanswered++
+            }
+        }
+
+    }
+
+
+
+
+
+
     $("#main-container").empty();
-    $("#main-container").append("final score")
+    $("#main-container").append("Final Score")
+    $("#main-container").append(correct);
+    $("#main-container").append(inforrect); 
+    $("#main-container").append(unanswered);
     //scoreboard
     //correct
     //incorrect
