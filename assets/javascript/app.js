@@ -1,7 +1,25 @@
-$(".btn").css("background-color", "blue");
+var userChoice = [];
+var correctAnswers  = 0;
+var incorrectAnswers = 0;
+var missedAnswers = 0;
+var timeDisplay;
 
 
+
+
+$(document).ready(function () {
+    console.log("ready!");
+
+
+    $(".btn").css("background-color", "blue");
 //create a start button
+$(".btn")/.click(function()){
+
+}
+
+
+
+
 //button on click, 10 questions to browser
 //button on click, timer to start
 
@@ -19,3 +37,4 @@ $(".btn").css("background-color", "blue");
     //un-answered questions === incorrect
     //final scoreboard
     //add gif under score
+});
