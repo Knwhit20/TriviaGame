@@ -16,6 +16,19 @@ var questions = [
         choices: ["Flayme", "Drogon", "Rhaegal", "Viserion"],
         answer: 0,
     },
+    {
+        query: "What is the name of Arya's direwolf?",
+        choices: ["Nymeria", "Ghost", "Grey Wind", "Summer"],
+        answer: 1,
+    },
+    {   query: "What is the name of the continent on which most of action of Game of Thrones takes place?",
+        choices: ["Essos", "Sothorys", "Westeros", "Beyond the Wall"],
+        answer: 3
+    },
+    {   query: "What substance was used during the Battle of the Blackwater to destroy Stannis Baratheon's fleet?",
+        choices: ["The Strangler", "Milk of Poppy", "Essence of Nightshade", "Wildfire"],
+        answer: 4,
+    },
 ]
 
 function runTimer(duration) {
@@ -40,7 +53,7 @@ function init() {
 }
 
 function runQuiz() {
-    var duration = 120
+    var duration = 60
 
     function decrement() {
         if (duration === 0) {
@@ -109,23 +122,14 @@ function finalScore() {
 
     }
 
-//turn off default selction
-//update scoreboard
-//style
-
-
 
 
     $("#main-container").empty();
-    $("#main-container").append("Final Score")
-    $("#main-container").append(correct);
-    $("#main-container").append(incorrect); 
-    $("#main-container").append(unanswered);
-    //scoreboard
-    //correct
-    //incorrect
-    //unanswered
-
+    $("#main-container").append("Scoreboard")
+    $("#main-container").append("<div>" + "Correct = " + correct + "</div");
+    $("#main-container").append("<div>" + "Incorrect = " + incorrect + "</div");
+    $("#main-container").append("<div>" + "Unanswered = " + unanswered + "</div>");
+   
 }
 
 
