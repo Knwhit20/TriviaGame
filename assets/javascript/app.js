@@ -64,8 +64,8 @@ function runQuiz() {
     for (var i = 0; i < questions.length; i++) {
         $("#main-container").append('<h2>' + questions[i].query + '</h2>');
         for (var k = 0; k < questions[i].choices.length; k++) {
-            $("#main-container").append('<div class="form-check"><input class="form-check-input" type="radio" name="'+ i +'" id="radio-'+ i + '-' + k +'" value="option1" checked><label class="form-check-label" for="exampleRadios1">' + questions[i].choices[k] + '</label></div>')
-        }
+            $("#main-container").append('<div class="form-check"><input class="form-check-input" type="radio" name="'+ i +'" id="radio-'+ i + '-' + k +'" value="option1"><label class="form-check-label" for="exampleRadios1">' + questions[i].choices[k] + '</label></div>')
+        } 
 
     }
     
@@ -119,7 +119,7 @@ function finalScore() {
     $("#main-container").empty();
     $("#main-container").append("Final Score")
     $("#main-container").append(correct);
-    $("#main-container").append(inforrect); 
+    $("#main-container").append(incorrect); 
     $("#main-container").append(unanswered);
     //scoreboard
     //correct
