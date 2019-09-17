@@ -123,7 +123,7 @@ function finalScore() {
     }
 
 
-
+    //scoreboard:  print to HTML
     $("#main-container").empty();
     $("#main-container").append("Scoreboard")
     $("#main-container").append("<div>" + "Correct = " + correct + "</div");
@@ -152,31 +152,6 @@ function main () {
         console.log(questions[i].choices[questions[i].answer])
 
     }
-
-
-    //     $(".btn").css("background-color", "blue");
-    // //create a start button
-    // $(".btn").click(function ());
-
-
-
-    //button on click, 10 questions to browser
-    //button on click, timer to start
-
-    //question to browser
-    //4 multiple choice answer buttons
-    //only allow one button selection per question
-
-    //"finish" button at end of questions
-    //create scoreboard
-    //correct
-    //incorrect
-    //unanswered questions
-    // if (timer === 0),
-    //score questions answered
-    //un-answered questions === incorrect
-    //final scoreboard
-    //add gif under score
 
 };
 
