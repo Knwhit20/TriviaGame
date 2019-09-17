@@ -1,3 +1,23 @@
 .jumbotron {
-    
+    background-color: black;
+    color: gold;
+    padding: 10px;
+    font-family: 'Cinzel', serif;
+    margin-bottom: 0px;
 }
+
+.display-4 {
+    color: gold;
+    font-weight: bold;
+    font-family: 'Cinzel', serif;
+}
+
+image {
+        height: 100%;
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: black;
+        align-content: center;
+    }

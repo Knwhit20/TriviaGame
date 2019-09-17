@@ -46,7 +46,7 @@ function runTimer(duration) {
 
 function init() {
     $("#main-container").empty();
-    $("#main-container").append('<p>Test your Game of Thrones knowledge. Answer the questions below to test your knowledge.</p>')
+    $("#main-container").append('<p>Answer the questions below to test your Game of Thrones knowledge.</p>')
     $("#main-container").append('<a id = "start" class="btn btn-primary btn-lg" href="#" role="button">Start</a>')
     $("#start").click(runQuiz)
 
