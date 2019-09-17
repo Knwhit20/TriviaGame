@@ -19,15 +19,15 @@ var questions = [
     {
         query: "What is the name of Arya's direwolf?",
         choices: ["Nymeria", "Ghost", "Grey Wind", "Summer"],
-        answer: 1,
+        answer: 0,
     },
     {   query: "What is the name of the continent on which most of action of Game of Thrones takes place?",
         choices: ["Essos", "Sothorys", "Westeros", "Beyond the Wall"],
-        answer: 3
+        answer: 2
     },
     {   query: "What substance was used during the Battle of the Blackwater to destroy Stannis Baratheon's fleet?",
         choices: ["The Strangler", "Milk of Poppy", "Essence of Nightshade", "Wildfire"],
-        answer: 4,
+        answer: 3,
     },
 ]
 
