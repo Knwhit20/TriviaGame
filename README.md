@@ -1,5 +1,7 @@
 # TriviaGame
 
+Deployed at: https://knwhit20.github.io/TriviaGame/
+
 Test your Game of Thrones trivia knowledge!
 
 Press the start button to begin the quiz. You will have 60 seconds to answer all the questions.  You may select only one answer for each question. Press the submit button when finished.  The scoreboard will show the correct and incorrect answers.  If the timer runs out before all the questions have been answered, the questions answered  will  be scored.  The scoreboard will  also show  the number of unanswered questions.
